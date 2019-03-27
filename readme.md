@@ -15,14 +15,6 @@
 
 > ESLint Configuration for xwtec es5 projects
 
-## Quick Start
-
-```sh
-npm install --global eslint prettier @xwtec/eslint-config-legacy eslint-plugin-prettier
-echo {"extends":"@xwtec/legacy"}>.eslintrc
-eslint **/*.js --fix
-```
-
 ## Install
 
 ```sh
