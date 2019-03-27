@@ -172,10 +172,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@xwtec/eslint-config@^5.0.1":
-  version "5.0.1"
-  resolved "http://registry.npm.taobao.org/@xwtec/eslint-config/download/@xwtec/eslint-config-5.0.1.tgz#61836079bca424fbc5a87ca05f0deb5818a7aa05"
-  integrity sha1-YYNgebykJPvFqHygXw3rWBinqgU=
+"@xwtec/eslint-config@^5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@xwtec/eslint-config/-/eslint-config-5.0.3.tgz#3a28156b1a8b898bd3f7266ea3ca6404866c8b5b"
+  integrity sha512-IQc37myZKCBspPETkiGBBNWizO1F5cRmiH6DaHqXIDwONtb806qzTqUkGc3gqWa/tStCVOZ5irlnpZqf4/GeKg==
   dependencies:
     eslint-plugin-prettier "^3.0.1"
 
