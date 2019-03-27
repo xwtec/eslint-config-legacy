@@ -6,7 +6,8 @@
   "keywords": ["xwtec", "eslint", "config"],
   "files": ["index.js"],
   "scripts": {
-    "release": "np --no-yarn --no-cleanup",
+    "release": "run-s test build release:*",
+    "release:npm": "np --no-yarn --no-cleanup",
     "test": "eslint **/*.js --config ./index.js",
     "prettier": "prettier **/*.{js,md,json} --write",
     "lint": "npm-run-all --parallel build:*",
