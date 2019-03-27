@@ -24,10 +24,10 @@ const errorData = data.filter(({value}) => value === 'error')
 const content = [
   RULE_START_MARK,
   "<!-- AUTO GENERATED CONTENT, DON'T EDIT -->",
-  '<details><summary>Error</summary>',
+  '<details open>\n<summary>Error</summary>',
   printer(errorData),
   '</details>',
-  '<details><summary>Warn</summary>',
+  '<details>\n<summary>Warn</summary>',
   printer(warnData),
   '</details>',
   RULE_END_MARK,

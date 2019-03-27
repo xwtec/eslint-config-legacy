@@ -41,7 +41,8 @@ module.exports = {
 
 <!-- AUTO GENERATED CONTENT, DON'T EDIT -->
 
-<details><summary>Error</summary>
+<details open>
+<summary>Error</summary>
 
 |  #  | Type  | Rule                                                                             | Description                                                                         |
 | :-: | :---: | :------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
@@ -65,7 +66,8 @@ module.exports = {
 
 </details>
 
-<details><summary>Warn</summary>
+<details>
+<summary>Warn</summary>
 
 |  #  | Type | Rule                                                                                       | Description                                                                           |
 | :-: | :--: | :----------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ |
