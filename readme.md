@@ -41,8 +41,7 @@ module.exports = {
 
 <!-- AUTO GENERATED CONTENT, DON'T EDIT -->
 
-<details open>
-<summary>Error</summary>
+### Error
 
 |  #  | Type  | Rule                                                                             | Description                                                                         |
 | :-: | :---: | :------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
@@ -64,10 +63,7 @@ module.exports = {
 | 16  | error | [no-unsafe-negation](https://eslint.org/docs/rules/no-unsafe-negation)           | disallow negating the left operand of relational operators                          |
 | 17  | error | [use-isnan](https://eslint.org/docs/rules/use-isnan)                             | require calls to `isNaN()` when checking for `NaN`                                  |
 
-</details>
-
-<details>
-<summary>Warn</summary>
+### Warn
 
 |  #  | Type | Rule                                                                                       | Description                                                                           |
 | :-: | :--: | :----------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ |
@@ -114,8 +110,6 @@ module.exports = {
 | 41  | warn | [strict](https://eslint.org/docs/rules/strict)                                             | require or disallow strict mode directives                                            |
 | 42  | warn | [valid-typeof](https://eslint.org/docs/rules/valid-typeof)                                 | enforce comparing `typeof` expressions against valid strings                          |
 | 43  | warn | [prettier/prettier](https://github.com/prettier/eslint-plugin-prettier#options)            |
-
-</details>
 
 <!-- rules end -->
 
