@@ -32,7 +32,7 @@ npm install --save-dev eslint prettier @xwtec/eslint-config-legacy
 ```js
 module.exports = {
   extends: ['@xwtec/legacy'],
-}
+};
 ```
 
 ## Rules
