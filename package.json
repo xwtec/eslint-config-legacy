@@ -1,6 +1,6 @@
 {
   "name": "@xwtec/eslint-config-legacy",
-  "version": "4.1.6",
+  "version": "4.1.7",
   "description": "ESLint Configuration for xwtec projects",
   "main": "index.js",
   "keywords": [
@@ -12,15 +12,16 @@
     "index.js"
   ],
   "scripts": {
-    "release": "run-s test build prettier release:*",
-    "release:npm": "np --no-yarn --no-cleanup",
+    "release": "run-s lint build test prettier dist",
+    "dist": "run-p dist:*",
+    "dist:npm": "np --no-yarn --no-cleanup",
     "test": "eslint **/*.js --config ./index.js",
     "prettier": "prettier **/*.{js,md,json} --write",
-    "lint": "npm-run-all --parallel build:*",
+    "lint": "run-p lint:*",
+    "lint:js": "eslint **/*.js --fix",
+    "lint:markdown": "markdownlint *.md",
     "build": "npm-run-all build:*",
-    "build:rules": "node -r esm ./scripts/rules",
-    "lint:js": "eslint **/*.js",
-    "lint:markdown": "markdownlint *.md"
+    "build:rules": "node -r esm ./scripts/rules"
   },
   "license": "MIT",
   "dependencies": {
