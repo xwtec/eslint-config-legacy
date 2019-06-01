@@ -20,5 +20,7 @@ module.exports = {
 
     // enforce one true comma style
     'comma-style': 'warn',
+
+    'dot-notation': ['warn', {allowKeywords: false}],
   },
 };
