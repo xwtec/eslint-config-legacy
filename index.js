@@ -4,6 +4,9 @@ module.exports = {
     browser: true,
   },
   extends: [
+    // fixable
+    '@xwtec/eslint-config/configs/fixable.js',
+
     // builtin
     '@xwtec/eslint-config/configs/errors.js',
     '@xwtec/eslint-config/configs/best-practices.js',
@@ -11,6 +14,7 @@ module.exports = {
     '@xwtec/eslint-config/configs/style.js',
 
     // prettier
+    'eslint-config-prettier',
     '@xwtec/eslint-config/configs/prettier.js',
   ].map(require.resolve),
   rules: {
