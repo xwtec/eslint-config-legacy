@@ -30,7 +30,7 @@
   "license": "MIT",
   "dependencies": {
     "@xwtec/eslint-config": "^6.0.11",
-    "eslint-config-prettier": "^5.0.0"
+    "eslint-config-prettier": "^5.1.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
