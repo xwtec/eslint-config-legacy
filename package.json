@@ -1,6 +1,6 @@
 {
   "name": "@xwtec/eslint-config-legacy",
-  "version": "4.1.11",
+  "version": "4.1.12",
   "description": "ESLint Configuration for xwtec legacy projects",
   "main": "index.js",
   "keywords": [
