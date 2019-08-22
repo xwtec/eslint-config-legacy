@@ -1,7 +1,18 @@
 module.exports = {
   root: true,
+  parser: 'babel-eslint',
   env: {
+    es6: false,
+    node: false,
     browser: true,
+  },
+  parserOptions: {
+    ecmaVersion: 5,
+    sourceType: 'script',
+    ecmaFeatures: {
+      globalReturn: false,
+      jsx: false,
+    },
   },
   extends: [
     // fixable

@@ -30,6 +30,7 @@
   "license": "MIT",
   "dependencies": {
     "@xwtec/eslint-config": "^6.0.14",
+    "babel-eslint": "10.0.2",
     "eslint-config-prettier": "^6.1.0"
   },
   "publishConfig": {
