@@ -24,8 +24,7 @@
     "lint:eslint": "eslint **/*.{js,mjs,vue}",
     "lint:markdown": "markdownlint **/*.md --ignore \"**/node_modules/**\"",
     "lint:prettier": "prettier \"**/*.{css,html,js,json,less,md,scss,ts,vue,yaml,yml}\" --check",
-    "release": "run-s lint build test format dist",
-    "test": "eslint **/*.js --config ./index.js"
+    "release": "run-s lint build test format dist"
   },
   "license": "MIT",
   "dependencies": {
