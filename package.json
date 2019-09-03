@@ -30,7 +30,7 @@
   "dependencies": {
     "@xwtec/eslint-config": "^6.0.15",
     "babel-eslint": "10.0.3",
-    "eslint-config-prettier": "^6.1.0"
+    "eslint-config-prettier": "^6.2.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
