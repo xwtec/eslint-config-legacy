@@ -59,7 +59,8 @@ module.exports = {
 | 12  | error | [no-self-compare](https://eslint.org/docs/rules/no-self-compare)                 | disallow comparisons where both sides are exactly the same                          |
 | 13  | error | [no-sequences](https://eslint.org/docs/rules/no-sequences)                       | disallow comma operators                                                            |
 | 14  | error | [no-undef](https://eslint.org/docs/rules/no-undef)                               | disallow the use of undeclared variables unless mentioned in `/*global */` comments |
-| 15  | error | [use-isnan](https://eslint.org/docs/rules/use-isnan)                             | require calls to `isNaN()` when checking for `NaN`                                  |
+| 15  | error | [no-unsafe-negation](https://eslint.org/docs/rules/no-unsafe-negation)           | disallow negating the left operand of relational operators                          |
+| 16  | error | [use-isnan](https://eslint.org/docs/rules/use-isnan)                             | require calls to `isNaN()` when checking for `NaN`                                  |
 
 ### Warn
 
@@ -115,15 +116,14 @@ module.exports = {
 |  9  | warn  | [no-regex-spaces](https://eslint.org/docs/rules/no-regex-spaces)                | disallow multiple spaces in regular expressions                                |
 | 10  | warn  | [no-undef-init](https://eslint.org/docs/rules/no-undef-init)                    | disallow initializing variables to `undefined`                                 |
 | 11  | warn  | [no-unneeded-ternary](https://eslint.org/docs/rules/no-unneeded-ternary)        | disallow ternary operators when simpler alternatives exist                     |
-| 12  | error | [no-unsafe-negation](https://eslint.org/docs/rules/no-unsafe-negation)          | disallow negating the left operand of relational operators                     |
-| 13  | warn  | [no-unused-labels](https://eslint.org/docs/rules/no-unused-labels)              | disallow unused labels                                                         |
-| 14  | warn  | [no-useless-return](https://eslint.org/docs/rules/no-useless-return)            | disallow redundant return statements                                           |
-| 15  | warn  | [one-var](https://eslint.org/docs/rules/one-var)                                | enforce variables to be declared either together or separately in functions    |
-| 16  | warn  | [operator-assignment](https://eslint.org/docs/rules/operator-assignment)        | require or disallow assignment operator shorthand where possible               |
-| 17  | warn  | [spaced-comment](https://eslint.org/docs/rules/spaced-comment)                  | enforce consistent spacing after the `//` or `/*` in a comment                 |
-| 18  | warn  | [strict](https://eslint.org/docs/rules/strict)                                  | require or disallow strict mode directives                                     |
-| 19  | warn  | [yoda](https://eslint.org/docs/rules/yoda)                                      | require or disallow "Yoda" conditions                                          |
-| 20  | warn  | [prettier/prettier](https://github.com/prettier/eslint-plugin-prettier#options) |
+| 12  | warn  | [no-unused-labels](https://eslint.org/docs/rules/no-unused-labels)              | disallow unused labels                                                         |
+| 13  | warn  | [no-useless-return](https://eslint.org/docs/rules/no-useless-return)            | disallow redundant return statements                                           |
+| 14  | warn  | [one-var](https://eslint.org/docs/rules/one-var)                                | enforce variables to be declared either together or separately in functions    |
+| 15  | warn  | [operator-assignment](https://eslint.org/docs/rules/operator-assignment)        | require or disallow assignment operator shorthand where possible               |
+| 16  | warn  | [spaced-comment](https://eslint.org/docs/rules/spaced-comment)                  | enforce consistent spacing after the `//` or `/*` in a comment                 |
+| 17  | warn  | [strict](https://eslint.org/docs/rules/strict)                                  | require or disallow strict mode directives                                     |
+| 18  | warn  | [yoda](https://eslint.org/docs/rules/yoda)                                      | require or disallow "Yoda" conditions                                          |
+| 19  | warn  | [prettier/prettier](https://github.com/prettier/eslint-plugin-prettier#options) |
 
 <!-- rules end -->
 
