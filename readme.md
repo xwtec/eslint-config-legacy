@@ -59,8 +59,7 @@ module.exports = {
 | 12  | error | [no-self-compare](https://eslint.org/docs/rules/no-self-compare)                 | disallow comparisons where both sides are exactly the same                          |
 | 13  | error | [no-sequences](https://eslint.org/docs/rules/no-sequences)                       | disallow comma operators                                                            |
 | 14  | error | [no-undef](https://eslint.org/docs/rules/no-undef)                               | disallow the use of undeclared variables unless mentioned in `/*global */` comments |
-| 15  | error | [no-unsafe-negation](https://eslint.org/docs/rules/no-unsafe-negation)           | disallow negating the left operand of relational operators                          |
-| 16  | error | [use-isnan](https://eslint.org/docs/rules/use-isnan)                             | require calls to `isNaN()` when checking for `NaN`                                  |
+| 15  | error | [use-isnan](https://eslint.org/docs/rules/use-isnan)                             | require calls to `isNaN()` when checking for `NaN`                                  |
 
 ### Warn
 
@@ -95,11 +94,12 @@ module.exports = {
 | 27  | warn | [no-unmodified-loop-condition](https://eslint.org/docs/rules/no-unmodified-loop-condition) | disallow unmodified loop conditions                                                   |
 | 28  | warn | [no-unreachable](https://eslint.org/docs/rules/no-unreachable)                             | disallow unreachable code after `return`, `throw`, `continue`, and `break` statements |
 | 29  | warn | [no-unsafe-finally](https://eslint.org/docs/rules/no-unsafe-finally)                       | disallow control flow statements in `finally` blocks                                  |
-| 30  | warn | [no-useless-escape](https://eslint.org/docs/rules/no-useless-escape)                       | disallow unnecessary escape characters                                                |
-| 31  | warn | [no-void](https://eslint.org/docs/rules/no-void)                                           | disallow `void` operators                                                             |
-| 32  | warn | [no-with](https://eslint.org/docs/rules/no-with)                                           | disallow `with` statements                                                            |
-| 33  | warn | [radix](https://eslint.org/docs/rules/radix)                                               | enforce the consistent use of the radix argument when using `parseInt()`              |
-| 34  | warn | [valid-typeof](https://eslint.org/docs/rules/valid-typeof)                                 | enforce comparing `typeof` expressions against valid strings                          |
+| 30  | warn | [no-unsafe-negation](https://eslint.org/docs/rules/no-unsafe-negation)                     | disallow negating the left operand of relational operators                            |
+| 31  | warn | [no-useless-escape](https://eslint.org/docs/rules/no-useless-escape)                       | disallow unnecessary escape characters                                                |
+| 32  | warn | [no-void](https://eslint.org/docs/rules/no-void)                                           | disallow `void` operators                                                             |
+| 33  | warn | [no-with](https://eslint.org/docs/rules/no-with)                                           | disallow `with` statements                                                            |
+| 34  | warn | [radix](https://eslint.org/docs/rules/radix)                                               | enforce the consistent use of the radix argument when using `parseInt()`              |
+| 35  | warn | [valid-typeof](https://eslint.org/docs/rules/valid-typeof)                                 | enforce comparing `typeof` expressions against valid strings                          |
 
 ### Fixable
 
