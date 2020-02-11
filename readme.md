@@ -17,22 +17,32 @@
 
 ## Install
 
-```sh
+```bash
 # with yarn
-yarn add --dev eslint prettier @xwtec/eslint-config-legacy
+yarn add --dev eslint prettier @xwtec/eslint-config-legacy @xwtec/prettier-config
 
 # with npm
-npm install --save-dev eslint prettier @xwtec/eslint-config-legacy
+npm install --save-dev eslint prettier @xwtec/eslint-config-legacy @xwtec/prettier-config
 ```
 
 ## Configuration
 
-`.eslintrc.js` formart is recommanded
+Add following code
 
 ```js
 module.exports = {
   extends: ['@xwtec/legacy'],
 };
+```
+
+to `.eslintrc.js` in your project.
+
+_You may also want config `prettier` with [`@xwtec/prettier-config`](https://github.com/xwtec/prettier-config#configuration)._
+
+## Usage
+
+```bash
+npx eslint "**/*.js"
 ```
 
 ## Rules
@@ -127,16 +137,13 @@ module.exports = {
 
 <!-- rules end -->
 
-## Relative
+## Related
 
 - [@xwtec/eslint-config](https://github.com/xwtec/eslint-config)
 - [@xwtec/eslint-config-vue](https://github.com/xwtec/eslint-config-vue)
+- [@xwtec/prettier-config](https://github.com/xwtec/prettier-config)
 
 ## Links
 
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
-
-## License
-
-MIT © [xwtec](https://github.com/xwtec)
