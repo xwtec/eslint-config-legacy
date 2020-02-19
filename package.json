@@ -2,41 +2,57 @@
   "name": "@xwtec/eslint-config-legacy",
   "version": "4.1.19",
   "description": "ESLint Configuration for xwtec legacy projects",
-  "main": "index.js",
   "keywords": [
     "xwtec",
     "eslint",
     "config",
     "legacy"
   ],
+  "homepage": "https://github.com/fisker/@xwtec/eslint-config-legacy#readme",
+  "bugs": {
+    "url": "https://github.com/fisker/@xwtec/eslint-config-legacy/issues"
+  },
+  "repository": "xwtec/eslint-config-legacy",
+  "license": "MIT",
+  "author": {
+    "name": "xwtec",
+    "url": "https://github.com/xwtec"
+  },
+  "sideEffects": false,
+  "main": "index.js",
   "files": [
     "index.js"
   ],
   "scripts": {
     "build": "npm-run-all build:*",
     "build:rules": "node -r esm ./scripts/rules",
+    "clean": "run-p clean:*",
+    "clean:dist": "del-cli dist",
     "dist": "run-p dist:*",
     "dist:npm": "np --yolo --no-yarn",
     "format": "run-p format:*",
     "format:eslint": "yarn lint:eslint --fix",
-    "format:prettier": "prettier **/*.{css,html,js,json,less,md,scss,ts,vue,yaml,yml} --write",
+    "format:markdown": "yarn lint:markdown --fix",
+    "format:package-json": "sort-package-json \"package.json\" \"packages/*/package.json\"",
+    "format:prettier": "yarn lint:prettier --write",
     "lint": "run-p lint:*",
-    "lint:eslint": "eslint **/*.{js,mjs,vue}",
-    "lint:markdown": "markdownlint **/*.md --ignore \"**/node_modules/**\"",
+    "lint:eslint": "eslint \"**/*.{js,mjs,vue}\"",
+    "lint:markdown": "markdownlint \"**/*.md\" --ignore \"**/node_modules/**\"",
+    "lint:package-json": "yarn run format:package-json --check",
     "lint:prettier": "prettier \"**/*.{css,html,js,json,less,md,scss,ts,vue,yaml,yml}\" --check",
     "release": "run-s lint build format dist"
   },
-  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "prettier": "@xwtec/prettier-config",
   "dependencies": {
     "@xwtec/eslint-config": "6.1.2",
     "babel-eslint": "10.0.3",
     "eslint-config-prettier": "6.10.0"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
-  "repository": "xwtec/eslint-config-legacy",
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
     "@fisker/commitlint-config": "1.1.7",
@@ -53,25 +69,15 @@
     "mem": "6.0.1",
     "npm-run-all": "4.1.5",
     "prettier": "1.19.1",
+    "sort-package-json": "1.40.0",
     "write-prettier-file": "1.2.5"
   },
   "peerDependencies": {
     "eslint": "*",
     "prettier": "*"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "bugs": {
-    "url": "https://github.com/xwtec/eslint-config-legacy/issues"
-  },
-  "homepage": "https://github.com/xwtec/eslint-config-legacy#readme",
-  "author": {
-    "name": "xwtec",
-    "url": "https://github.com/xwtec"
-  },
-  "prettier": "@xwtec/prettier-config",
-  "sideEffects": false
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
