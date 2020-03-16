@@ -47,9 +47,8 @@ jobs:
       #   with:
       #     name: dist
       #     path: dist
-
-      - name: Run Test
-        run: yarn test
+      # - name: Run Test
+      #   run: yarn test
 
   #     - name: Upload Coverage
   #       uses: coverallsapp/github-action@master
