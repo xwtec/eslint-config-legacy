@@ -50,7 +50,7 @@
   "prettier": "@xwtec/prettier-config",
   "dependencies": {
     "@xwtec/eslint-config": "6.1.2",
-    "babel-eslint": "10.0.3",
+    "babel-eslint": "10.1.0",
     "eslint-config-prettier": "6.10.0"
   },
   "devDependencies": {
