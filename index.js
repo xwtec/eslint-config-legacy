@@ -1,12 +1,15 @@
+const base = require('@xwtec/eslint-config');
+
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
+  parser: base.parser,
   env: {
     es6: false,
     node: false,
     browser: true,
   },
   parserOptions: {
+    ...base.parserOptions,
     ecmaVersion: 5,
     sourceType: 'script',
     ecmaFeatures: {
